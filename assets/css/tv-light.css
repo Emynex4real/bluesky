@@ -2,46 +2,54 @@
    BlueSky Group | TV & Production (Light Theme)
    ========================================= */
 
-/* --- 1. TV Hero Section (Light) --- */
-.tv-hero {
+/* --- 1. TV Visual Banner (Image Only) --- */
+.tv-visual-banner {
     position: relative;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    background-color: #f8fafc;
+    width: 100%;
+    height: 65vh; /* Occupies 85% of viewport height */
     overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
+    padding: ;
 }
 
-.hero-bg-wrapper {
-    position: absolute;
-    top: 0; right: 0;
-    width: 60%; /* Occupy right side */
+.visual-container {
+    width: 100%;
     height: 100%;
+    position: relative;
 }
 
-.hero-img {
-    width: 100%; height: 100%; object-fit: cover;
-    mask-image: linear-gradient(to right, transparent, black 20%);
-    -webkit-mask-image: linear-gradient(to right, transparent, black 20%);
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.hero-gradient-overlay {
+/* Optional overlay if you want to darken the image slightly for future text */
+.visual-overlay {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
-    /* Gradient from solid white to transparent */
-    background: linear-gradient(to right, #f8fafc 10%, rgba(248, 250, 252, 0.4) 100%);
+    background: rgba(0, 0, 0, 0.1); /* Very subtle tint */
+}
+
+/* --- 2. TV Intro Text (Content Below) --- */
+.tv-intro-text {
+    background: #fff;
+    padding: 6rem 0; /* Space above and below text */
+    text-align: center;
 }
 
 .hero-content {
-    max-width: 600px;
-    padding-left: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero-pill {
     display: inline-block;
     background: #e0f2fe;
     color: #0066cc;
-    padding: 6px 16px;
+    padding: 8px 20px;
     border-radius: 50px;
     font-size: 0.85rem;
     font-weight: 600;
@@ -52,7 +60,7 @@
 
 .hero-title {
     font-family: 'Outfit', sans-serif;
-    font-size: clamp(3.5rem, 6vw, 5.5rem);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
     line-height: 1.1;
     color: #0f172a;
     margin-bottom: 1.5rem;
@@ -66,10 +74,14 @@
     color: #64748b;
     line-height: 1.7;
     margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-btns {
     display: flex;
+    justify-content: center;
     gap: 1.5rem;
     align-items: center;
 }
@@ -99,10 +111,10 @@
 .btn-secondary:hover { color: #0066cc; border-color: #0066cc; }
 
 
-/* --- 2. Showcase Grid (Clean Cards) --- */
+/* --- 3. Showcase Grid --- */
 .showcase-section {
-    background: white;
-    padding: 8rem 0;
+    background: #f8fafc;
+    padding: 6rem 0 8rem;
 }
 
 .tv-grid {
@@ -183,79 +195,9 @@
 }
 .tv-card:hover .card-link { gap: 10px; }
 
-
-/* --- 3. Production Stats (Light Blue) --- */
-.production-stats {
-    background: #f0f9ff;
-    padding: 6rem 0;
-}
-
-.stats-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    flex-wrap: wrap;
-}
-
-.stat-item {
-    text-align: center;
-    padding: 2rem;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 102, 204, 0.05);
-    min-width: 250px;
-    transition: 0.3s;
-}
-
-.stat-item:hover { transform: translateY(-5px); }
-
-.stat-icon {
-    font-size: 2.5rem;
-    color: #0066cc;
-    margin-bottom: 1rem;
-}
-
-.stat-item h4 {
-    font-size: 1.8rem;
-    color: #0f172a;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.stat-item p {
-    color: #64748b;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-
-/* --- 4. CTA Banner (Reused Dark/Light contrast) --- */
-.cta-banner {
-    position: relative;
-    padding: 8rem 0;
-    color: white;
-    text-align: center;
-    overflow: hidden;
-    background: #0f172a;
-}
-.cta-bg-image {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
-    opacity: 0.3;
-}
-.cta-title { font-family: 'Outfit', sans-serif; font-size: 3rem; margin-bottom: 1.5rem; }
-
 /* Responsive */
 @media (max-width: 900px) {
-    .tv-hero { height: auto; padding: 150px 0 100px; }
-    .hero-bg-wrapper { width: 100%; height: 300px; position: relative; margin-bottom: 2rem; }
-    .hero-img { mask-image: none; -webkit-mask-image: none; }
-    .hero-gradient-overlay { display: none; }
+    .tv-visual-banner { height: 60vh; margin-top: 80px; /* Space for fixed header */ }
     .hero-title { font-size: 3rem; }
-    
-    .stats-wrapper { gap: 2rem; }
+    .hero-btns { flex-direction: column; }
 }
