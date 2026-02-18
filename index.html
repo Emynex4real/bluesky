@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="assets/images/LogoIcon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -22,16 +23,20 @@
 
 <body>
 
-    <div class="loader">
-        <div class="loader-wrapper">
-            <span class="loader-text">BlueSky</span>
-            <div class="loader-bar"></div>
+<div class="loader">
+    <div class="loader-content">
+        <div class="loader-logo-text">
+            <span class="brand-blue">Blue</span>Sky
         </div>
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+        <p class="loader-status">Loading Experience...</p>
     </div>
+</div>
 
-   <header class="header">
+<header class="header">
     <div class="nav-container">
-        
         <div class="logo-container">
             <a href="index.html">
                 <img src="assets/images/BSLogo.png" alt="BlueSky" class="company-logo">
@@ -81,7 +86,7 @@
                     </div>
                 </li>
                 
-                <li><a href="pages/services.html" target="_blank" class="nav-link">Services</a></li>
+                <li><a href="pages/services.html" class="nav-link">Services</a></li>
             </ul>
         </nav>
 
@@ -129,365 +134,304 @@
     </div>
 </div>
 
-    <div class="mobile-nav">
-        <div class="mobile-nav-content">
-            <a href="index.html" class="mobile-link">Home</a>
-            <a href="pages/About.html" class="mobile-link">About Us</a>
-            <div class="mobile-dropdown-container">
-                <span class="mobile-link has-dropdown">Services <i class="fas fa-plus"></i></span>
-                <div class="mobile-sub-links">
-                    <a href="pages/BlueSkyMediapromotions.html">Media Promotions</a>
-                    <a href="pages/PrintHouse.html">Print House</a>
-                    <a href="Models/index.html">Models & Ushers</a>
-                    <a href="pages/BlueSkyTv.html">BlueSky TV</a>
-                </div>
-            </div>
-            <a href="https://www.behance.net/gallery/221056545/BlueSky-Promotional-Items" class="mobile-link">Promotional Items</a>
-            <a href="pages/contact.html" class="mobile-link highlight">Contact Us</a>
+<main id="smooth-wrapper">
+    <section class="hero-section">
+        <div class="video-container">
+            <video autoplay loop muted playsinline class="hero-video">
+                <source src="assets/videos/bsmedia.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
         </div>
-    </div>
-
-    <main id="smooth-wrapper">
         
-        <section class="hero-section">
-            <div class="video-container">
-                <video autoplay loop muted playsinline class="hero-video">
-                    <source src="assets/videos/bsmedia.mp4" type="video/mp4">
-                </video>
-                <div class="video-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Welcome to the future of ads</div>
+            <h1 class="hero-title">BlueSky <br><span class="highlight-text">Group.</span></h1>
+            <p class="hero-subtitle">
+                We envision a world where brands seamlessly connect with their audience through creativity, innovation, and strategic precision.
+            </p>
+            <div class="hero-actions">
+                <a href="pages/About.html" class="cta-button primary">
+                    <span>Discover More</span>
+                    <div class="icon-circle"><i class="fas fa-arrow-right"></i></div>
+                </a>
             </div>
-            
-            <div class="hero-content">
-                <div class="hero-badge">Welcome to the future of ads</div>
-                <h1 class="hero-title">BlueSky <br><span class="highlight-text">Group.</span></h1>
-                <p class="hero-subtitle">
-                    We envision a world where brands seamlessly connect with their audience through creativity, innovation, and strategic precision.
-                </p>
-                <div class="hero-actions">
-                    <a href="pages/About.html" class="cta-button primary">
-                        <span>Discover More</span>
-                        <div class="icon-circle"><i class="fas fa-arrow-right"></i></div>
-                    </a>
-                </div>
-            </div>
+        </div>
 
-            <div class="scroll-indicator">
-                <span>Scroll</span>
-                <div class="line"></div>
-            </div>
-        </section>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </section>
 
-        <section class="vision-mission section-padding">
-            <div class="container">
-                <div class="grid-layout">
-                    <div class="text-side reveal-text">
-                        <span class="section-tag">Who We Are</span>
-                        <h2 class="section-heading">Bridging the gap between <span class="blue-text">Brand</span> & <span class="blue-text">Consumer</span>.</h2>
-                        
-                        <div class="info-block active">
-                            <h3>Our Vision</h3>
-                            <p>To be recognized as leading in the delivery of cutting-edge brand projection to all our clients who seek to bridge their interface with consumers in the markets where they operate.</p>
-                        </div>
-                        
-                        <div class="info-block">
-                            <h3>Our Mission</h3>
-                            <p>To engage all relevant marketing communication vehicles and mix using up-to-date technology and manpower in delivering values to clients.</p>
-                        </div>
-
-                        <a href="pages/About.html" class="text-link">Read our full story <i class="fas fa-long-arrow-right"></i></a>
+    <section class="vision-mission section-padding">
+        <div class="container">
+            <div class="grid-layout">
+                <div class="text-side reveal-text">
+                    <span class="section-tag">Who We Are</span>
+                    <h2 class="section-heading">Bridging the gap between <span class="blue-text">Brand</span> & <span class="blue-text">Consumer</span>.</h2>
+                    
+                    <div class="info-block active">
+                        <h3>Our Vision</h3>
+                        <p>To be recognized as leading in the delivery of cutting-edge brand projection to all our clients who seek to bridge their interface with consumers in the markets where they operate.</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h3>Our Mission</h3>
+                        <p>To engage all relevant marketing communication vehicles and mix using up-to-date technology and manpower in delivering values to clients.</p>
                     </div>
 
-                    <div class="image-side reveal-image">
-                        <div class="image-wrapper main">
-                            <img src="assets/images/1.jpg" alt="BlueSky Operations">
-                        </div>
-                        <div class="image-wrapper secondary parallax-img" data-speed="0.1">
-                            <img src="assets/images/2.jpg" alt="Team Work">
-                        </div>
+                    <a href="pages/About.html" class="text-link">Read our full story <i class="fas fa-long-arrow-right"></i></a>
+                </div>
+
+                <div class="image-side reveal-image">
+                    <div class="image-wrapper main">
+                        <img src="assets/images/1.jpg" alt="BlueSky Operations">
+                    </div>
+                    <div class="image-wrapper secondary parallax-img" data-speed="0.1">
+                        <img src="assets/images/2.jpg" alt="Team Work">
                     </div>
                 </div>
             </div>
-        </section>
-
-<section class="typed-divider">
-    <div class="arch-grid-bg"></div>
-
-    <div class="container relative z-10">
-        
-        <div class="divider-header center">
-            <span class="agency-tag">Our Promise</span>
-            <p class="divider-prefix">We don't just advertise. We deliver.</p>
-            <div class="typed-wrapper">
-                <h2 class="typed-heading"><span class="solid-text" id="units"></span></h2>
-            </div>
         </div>
+    </section>
 
-        <div class="value-grid">
-            
-            <div class="agency-card reveal-value">
-                <div class="card-number">01</div>
-                <div class="card-icon">
-                    <i class="fas fa-brain"></i>
-                </div>
-                <div class="card-text">
-                    <h3>Data-Driven Strategy</h3>
-                    <p>We analyze market trends to ensure your brand reaches the exact audience it needs.</p>
-                </div>
-                <div class="hover-line"></div>
-            </div>
-
-            <div class="agency-card reveal-value">
-                <div class="card-number">02</div>
-                <div class="card-icon">
-                    <i class="fas fa-layer-group"></i>
-                </div>
-                <div class="card-text">
-                    <h3>Creative Excellence</h3>
-                    <p>Designs and campaigns that don't just look good—they convert and leave a mark.</p>
-                </div>
-                <div class="hover-line"></div>
-            </div>
-
-            <div class="agency-card reveal-value">
-                <div class="card-number">03</div>
-                <div class="card-icon">
-                    <i class="fas fa-rocket"></i>
-                </div>
-                <div class="card-text">
-                    <h3>Measurable ROI</h3>
-                    <p>Every campaign is optimized for performance, ensuring you get value for every naira spent.</p>
-                </div>
-                <div class="hover-line"></div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-  <section class="services-section section-padding">
-    <div class="container">
-        <div class="section-header center mb-4">
-            <span class="section-tag">Our Expertise</span>
-            <h2 class="section-heading">Comprehensive Solutions</h2>
-        </div>
-
-        <div class="bento-grid">
-    
-    <div class="bento-item large reveal-card">
-        <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?auto=format&fit=crop&q=80&w=800" alt="Billboard" class="bento-bg-image">
-        <div class="bento-overlay"></div>
-        
-        <div class="bento-content">
-            <div class="bento-top">
-                <div class="icon-box"><i class="fas fa-rectangle-ad"></i></div>
-                <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
-            </div>
-            <h3>Out-Of-Home (OOH)</h3>
-            <p>High-impact outdoor campaigns that put brands in front of the right audience at the right time.</p>
-        </div>
-    </div>
-
-    <div class="bento-item reveal-card">
-        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Charts" class="bento-bg-image">
-        <div class="bento-overlay"></div>
-        
-        <div class="bento-content">
-            <div class="bento-top">
-                <div class="icon-box"><i class="fas fa-chart-pie"></i></div>
-                <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
-            </div>
-            <h3>Media Planning</h3>
-            <p>Data-driven strategies ensuring optimal reach and guaranteed ROI.</p>
-        </div>
-    </div>
-
-    <div class="bento-item reveal-card">
-        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=800" alt="Concert Crowd" class="bento-bg-image">
-        <div class="bento-overlay"></div>
-        
-        <div class="bento-content">
-            <div class="bento-top">
-                <div class="icon-box"><i class="fas fa-bullhorn"></i></div>
-                <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
-            </div>
-            <h3>Brand Activations</h3>
-            <p>Engaging experiential marketing, in-store activations, and product launches.</p>
-        </div>
-    </div>
-
-    <div class="bento-item wide reveal-card">
-        <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b21906?auto=format&fit=crop&q=80&w=1200" alt="Printing" class="bento-bg-image">
-        <div class="bento-overlay"></div>
-        
-        <div class="bento-content">
-            <div class="bento-top">
-                <div class="icon-box"><i class="fas fa-print"></i></div>
-                <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
-            </div>
-            <h3>Branding & Fabrication</h3>
-            <p>High-quality signage, POSMs, and vehicle branding that strengthens identity.</p>
-        </div>
-    </div>
-
-    <div class="bento-item reveal-card">
-        <img src="https://images.unsplash.com/photo-1512418490979-92798cec1380?auto=format&fit=crop&q=80&w=800" alt="Gifts" class="bento-bg-image">
-        <div class="bento-overlay"></div>
-        
-        <div class="bento-content">
-            <div class="bento-top">
-                <div class="icon-box"><i class="fas fa-gifts"></i></div>
-                <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
-            </div>
-            <h3>Promotional Products</h3>
-            <p>Customized items that enhance brand recall and customer loyalty.</p>
-        </div>
-    </div>
-
-</div>
-    </div>
-</section>
-
-        <section class="clients-section">
-            <div class="container">
-                <p class="clients-label">Trusted by industry leaders</p>
-            </div>
-            <div class="marquee-wrapper">
-                <div class="gradient-fade left"></div>
-                <div class="marquee-content">
-                    <img src="assets/images/Zenith Bank.png" alt="Zenith">
-                    <img src="assets/images/wema.png" alt="Wema">
-                    <img src="assets/images/axa mansard.png" alt="AXA">
-                    <img src="assets/images/Leadway Pensure.png" alt="Leadway">
-                    <img src="assets/images/cway.png" alt="Cway">
-                    <img src="assets/images/BOBO.png" alt="Bobo">
-                    <img src="assets/images/nigerbev.jpg" alt="Nigerbev">
-                    <img src="assets/images/Lagos state.jpg" alt="Lagos State">
-                    <img src="assets/images/first Bank.jpg" alt="First Bank">
-                    <img src="assets/images/Zenith Bank.png" alt="Zenith">
-                    <img src="assets/images/wema.png" alt="Wema">
-                    <img src="assets/images/axa mansard.png" alt="AXA">
-                    <img src="assets/images/Leadway Pensure.png" alt="Leadway">
-                    <img src="assets/images/cway.png" alt="Cway">
-                    <img src="assets/images/BOBO.png" alt="Bobo">
-                    <img src="assets/images/nigerbev.jpg" alt="Nigerbev">
-                    <img src="assets/images/Lagos state.jpg" alt="Lagos State">
-                    <img src="assets/images/first Bank.jpg" alt="First Bank">
-                </div>
-                <div class="gradient-fade right"></div>
-            </div>
-        </section>
-
-       <section class="stats-break parallax-section">
-    <div class="parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1492551557933-34265f7af79e?q=80&w=2000&auto=format&fit=crop');"></div>
-    
-    <div class="overlay-dark"></div>
-    <div class="overlay-grain"></div>
-
-    <div class="container relative z-10">
-        <div class="stat-wrapper center">
-            <span class="stat-subtitle">Our Ultimate Goal</span>
-            
-            <h2 class="big-stat-display">
-                <span id="units2"></span><span class="cursor-blink">|</span>
-            </h2>
-
-            <div class="stat-footer-line">
-                <span class="line"></span>
-                <span class="icon-star"><i class="fas fa-star"></i></span>
-                <span class="line"></span>
-            </div>
-        </div>
-    </div>
-</section>
-
-       <footer class="footer">
-    <div class="container">
-        
-        <div class="footer-cta-section">
-            <h2 class="cta-heading">Have an idea? <br>Let's build it together.</h2>
-            <a href="pages/contact.html" class="big-arrow-btn">
-                <span class="btn-text">Start a Project</span>
-                <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
-            </a>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        <div class="footer-content-grid">
-            
-            <div class="footer-col brand-col">
-                <img src="assets/images/BSLogo.png" alt="BlueSky" class="footer-logo">
-                <p class="footer-desc">
-                    Optimising brand visibility through data-driven strategy and creative precision.
-                </p>
-                <div class="brand-badges">
-                    <img src="assets/images/mediaCircle.png" alt="Media Association">
-                    <img src="assets/images/bsmodels.png" alt="Model Guild">
+    <section class="typed-divider">
+        <div class="arch-grid-bg"></div>
+        <div class="container relative z-10">
+            <div class="divider-header center">
+                <span class="agency-tag">Our Promise</span>
+                <p class="divider-prefix">We don't just advertise. We deliver.</p>
+                <div class="typed-wrapper">
+                    <h2 class="typed-heading"><span class="solid-text" id="units"></span></h2>
                 </div>
             </div>
 
-            <div class="footer-col">
-                <h4 class="footer-label">Explore</h4>
-                <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/About.html">About Us</a></li>
-                    <li><a href="Careers/careers.html">Portfolio</a></li>
-                    <li><a href="https://www.behance.net/gallery/221056545/BlueSky-Promotional-Items">Services</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h4 class="footer-label">Services</h4>
-                <ul class="footer-links">
-                    <li><a href="pages/BlueSkyMediapromotions.html">Media Promotions</a></li>
-                    <li><a href="pages/PrintHouse.html">Print House</a></li>
-                    <li><a href="Models/index.html">Models & Ushers</a></li>
-                    <li><a href="pages/BlueSkyTv.html">BlueSky TV</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col contact-col">
-                <h4 class="footer-label">Get in Touch</h4>
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> info@blueskygroup.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</p>
+            <div class="value-grid">
+                <div class="agency-card reveal-value">
+                    <div class="card-number">01</div>
+                    <div class="card-icon"><i class="fas fa-brain"></i></div>
+                    <div class="card-text">
+                        <h3>Data-Driven Strategy</h3>
+                        <p>We analyze market trends to ensure your brand reaches the exact audience it needs.</p>
+                    </div>
+                    <div class="hover-line"></div>
                 </div>
-                
-                <div class="social-wrapper">
-                    <a href="https://linktr.ee/blueskymediapromotions" target="_blank" class="social-circle">
-                        <i class="fas fa-share-alt"></i>
-                    </a>
-                    <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-circle"><i class="fab fa-whatsapp"></i></a>
+
+                <div class="agency-card reveal-value">
+                    <div class="card-number">02</div>
+                    <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+                    <div class="card-text">
+                        <h3>Creative Excellence</h3>
+                        <p>Designs and campaigns that don't just look good—they convert and leave a mark.</p>
+                    </div>
+                    <div class="hover-line"></div>
+                </div>
+
+                <div class="agency-card reveal-value">
+                    <div class="card-number">03</div>
+                    <div class="card-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="card-text">
+                        <h3>Measurable ROI</h3>
+                        <p>Every campaign is optimized for performance, ensuring you get value for every naira spent.</p>
+                    </div>
+                    <div class="hover-line"></div>
                 </div>
             </div>
-
         </div>
+    </section>
 
-        <div class="footer-divider"></div>
-
-        <div class="footer-bottom">
-            <p>Ⓒ 2025 BlueSky Group.</p>
-            <div class="legal-links">
-                <a href="#">Privacy Policy</a>
-                <span class="separator">•</span>
-                <a href="#">Terms & Conditions</a>
+    <section class="services-section section-padding">
+        <div class="container">
+            <div class="section-header center mb-4">
+                <span class="section-tag">Our Expertise</span>
+                <h2 class="section-heading">Comprehensive Solutions</h2>
             </div>
-            <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-                Back to Top <i class="fas fa-arrow-up"></i>
+
+            <div class="bento-grid">
+                <div class="bento-item large reveal-card">
+                    <img src="https://images.unsplash.com/photo-1542204165-65bf26472b9b?auto=format&fit=crop&q=80&w=800" alt="Billboard" class="bento-bg-image">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-content">
+                        <div class="bento-top">
+                            <div class="icon-box"><i class="fas fa-rectangle-ad"></i></div>
+                            <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                        <h3>Out-Of-Home (OOH)</h3>
+                        <p>High-impact outdoor campaigns that put brands in front of the right audience at the right time.</p>
+                    </div>
+                </div>
+
+                <div class="bento-item reveal-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Charts" class="bento-bg-image">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-content">
+                        <div class="bento-top">
+                            <div class="icon-box"><i class="fas fa-chart-pie"></i></div>
+                            <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                        <h3>Media Planning</h3>
+                        <p>Data-driven strategies ensuring optimal reach and guaranteed ROI.</p>
+                    </div>
+                </div>
+
+                <div class="bento-item reveal-card">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=800" alt="Concert Crowd" class="bento-bg-image">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-content">
+                        <div class="bento-top">
+                            <div class="icon-box"><i class="fas fa-bullhorn"></i></div>
+                            <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                        <h3>Brand Activations</h3>
+                        <p>Engaging experiential marketing, in-store activations, and product launches.</p>
+                    </div>
+                </div>
+
+                <div class="bento-item wide reveal-card">
+                    <img src="https://images.unsplash.com/photo-1635350736475-c8cef4b21906?auto=format&fit=crop&q=80&w=1200" alt="Printing" class="bento-bg-image">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-content">
+                        <div class="bento-top">
+                            <div class="icon-box"><i class="fas fa-print"></i></div>
+                            <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                        <h3>Branding & Fabrication</h3>
+                        <p>High-quality signage, POSMs, and vehicle branding that strengthens identity.</p>
+                    </div>
+                </div>
+
+                <div class="bento-item reveal-card">
+                    <img src="https://images.unsplash.com/photo-1512418490979-92798cec1380?auto=format&fit=crop&q=80&w=800" alt="Gifts" class="bento-bg-image">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-content">
+                        <div class="bento-top">
+                            <div class="icon-box"><i class="fas fa-gifts"></i></div>
+                            <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                        <h3>Promotional Products</h3>
+                        <p>Customized items that enhance brand recall and customer loyalty.</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-    </div>
-</footer>
+    <section class="clients-section">
+        <div class="container">
+            <p class="clients-label">Trusted by industry leaders</p>
+        </div>
+        <div class="marquee-wrapper">
+            <div class="gradient-fade left"></div>
+            <div class="marquee-content">
+                <img src="assets/images/Zenith Bank.png" alt="Zenith">
+                <img src="assets/images/wema.png" alt="Wema">
+                <img src="assets/images/axa mansard.png" alt="AXA">
+                <img src="assets/images/Leadway Pensure.png" alt="Leadway">
+                <img src="assets/images/cway.png" alt="Cway">
+                <img src="assets/images/BOBO.png" alt="Bobo">
+                <img src="assets/images/nigerbev.jpg" alt="Nigerbev">
+                <img src="assets/images/Lagos state.jpg" alt="Lagos State">
+                <img src="assets/images/first Bank.jpg" alt="First Bank">
+                <img src="assets/images/Zenith Bank.png" alt="Zenith">
+                <img src="assets/images/wema.png" alt="Wema">
+                <img src="assets/images/axa mansard.png" alt="AXA">
+                <img src="assets/images/Leadway Pensure.png" alt="Leadway">
+                <img src="assets/images/cway.png" alt="Cway">
+                <img src="assets/images/BOBO.png" alt="Bobo">
+                <img src="assets/images/nigerbev.jpg" alt="Nigerbev">
+                <img src="assets/images/Lagos state.jpg" alt="Lagos State">
+                <img src="assets/images/first Bank.jpg" alt="First Bank">
+            </div>
+            <div class="gradient-fade right"></div>
+        </div>
+    </section>
 
-    </main>
-    
-    <audio id="background-music" loop>
-        <source src="#" type="audio/mpeg">
-    </audio>
+    <section class="stats-break parallax-section">
+        <div class="parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1492551557933-34265f7af79e?q=80&w=2000&auto=format&fit=crop');"></div>
+        <div class="overlay-dark"></div>
+        <div class="overlay-grain"></div>
+        <div class="container relative z-10">
+            <div class="stat-wrapper center">
+                <span class="stat-subtitle">Our Ultimate Goal</span>
+                <h2 class="big-stat-display">
+                    <span id="units2"></span><span class="cursor-blink">|</span>
+                </h2>
+                <div class="stat-footer-line">
+                    <span class="line"></span>
+                    <span class="icon-star"><i class="fas fa-star"></i></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="assets/js/style.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-cta-section">
+                <h2 class="cta-heading">Have an idea? <br>Let's build it together.</h2>
+                <a href="pages/contact.html" class="big-arrow-btn">
+                    <span class="btn-text">Start a Project</span>
+                    <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-content-grid">
+                <div class="footer-col brand-col">
+                    <img src="assets/images/BSLogo.png" alt="BlueSky" class="footer-logo">
+                    <p class="footer-desc">Optimising brand visibility through data-driven strategy and creative precision.</p>
+                    <div class="brand-badges">
+                        <img src="assets/images/mediaCircle.png" alt="Media Association">
+                        <img src="assets/images/bsmodels.png" alt="Model Guild">
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-label">Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/About.html">About Us</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="pages/Services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-label">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/BlueSkyMediapromotions.html">Media Promotions</a></li>
+                        <li><a href="pages/PrintHouse.html">Print House</a></li>
+                        <li><a href="Models/index.html">Models & Ushers</a></li>
+                        <li><a href="pages/BlueSkyTv.html">BlueSky TV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-col">
+                    <h4 class="footer-label">Get in Touch</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@blueskygroup.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</p>
+                    </div>
+                    <div class="social-wrapper">
+                        <a href="https://linktr.ee/blueskymediapromotions" target="_blank" class="social-circle"><i class="fas fa-share-alt"></i></a>
+                        <a href="#" class="social-circle"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-circle"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>Ⓒ 2025 BlueSky Group.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <span class="separator">•</span>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+                <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+                    Back to Top <i class="fas fa-arrow-up"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<script src="assets/js/style.js"></script>
 </body>
 </html>

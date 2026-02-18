@@ -144,3 +144,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const loader = document.querySelector('.loader');
+    const body = document.body;
+
+    // Prevent scrolling while loader is active
+    body.classList.add('loading');
+
+    window.addEventListener('load', () => {
+        // Set a minimum time to show the animation (e.g., 2.5s)
+        setTimeout(() => {
+            if(loader) {
+                loader.classList.add('hidden');
+                body.classList.remove('loading');
+            }
+        }, 2500); 
+    });
+});
