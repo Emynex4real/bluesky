@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Promotions | BlueSky Group</title>
+    <title>Our Services | BlueSky Group</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,14 +13,14 @@
     <link rel="shortcut icon" href="../assets/images/LogoIcon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../assets/css/style.css"> 
-    <link rel="stylesheet" href="../assets/css/media-modern.css"> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/services-modern.css"> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
 </head>
 
 <body>
 
-        <header class="header">
+    <header class="header">
         <div class="nav-container">
             <div class="logo-container">
                 <a href="../index.html">
@@ -31,10 +31,10 @@
             <nav class="desktop-nav">
                 <ul class="nav-list">
                     <li><a href="../index.html" class="nav-link">Home</a></li>
-                    <li><a href="About.html" class="nav-link active">About Us</a></li>
+                    <li><a href="About.html" class="nav-link">About Us</a></li>
                     
                     <li class="dropdown-trigger">
-                        <a href="#" class="nav-link">
+s                        <a href="#" class="nav-link">
                             Portfolio <i class="fas fa-chevron-down chevron"></i>
                         </a>
                         <div class="dropdown-menu">
@@ -71,12 +71,12 @@
                         </div>
                     </li>
                     
-                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="services.html" class="nav-link active">Services</a></li>
                 </ul>
             </nav>
 
             <div class="header-actions">
-                <a href="contact.html" class="btn-contact">Let's Talk</a>
+                <a href="contact.html" class="btn-contact">Contact Us</a>
                 <div class="hamburger">
                     <div class="menu-line top"></div>
                     <div class="menu-line bottom"></div>
@@ -113,125 +113,81 @@
 
     <main id="smooth-wrapper">
 
-        <section class="media-hero">
-            <div class="hero-overlay"></div>
-            <div class="hero-bg" style="background-image: url('../assets/images/oom.jpg');"></div>
-            
-            <div class="container relative z-10 center">
-                <span class="hero-tag">BlueSky Divisions</span>
-                <h1 class="hero-title">Media <span class="highlight-blue">Promotions.</span></h1>
+        <section class="services-hero">
+            <div class="container center">
+                <span class="hero-pill">What We Do</span>
+                <h1 class="hero-title">Comprehensive <br><span class="highlight-blue">Solutions.</span></h1>
                 <p class="hero-desc">
-                    We don’t just promote brands—we elevate them. From strategy to execution, we craft media solutions that connect, convert, and captivate.
+                    From high-impact advertising to precision printing, we provide end-to-end services that elevate your brand and connect you with your audience.
                 </p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="num">360°</span>
-                        <span class="label">Approach</span>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="stat">
-                        <span class="num">14+</span>
-                        <span class="label">Years Active</span>
-                    </div>
-                </div>
             </div>
-            
-            <a href="#services" class="scroll-down-simple">
-                <span class="mouse-icon"><span class="scroll-wheel"></span></span>
-            </a>
+            <div class="hero-bg-graphic"></div>
         </section>
 
-        <section id="services" class="services-wrapper section-padding">
+        <section class="services-list section-padding">
             <div class="container">
-                
-                <div class="section-header center mb-5">
-                    <span class="pill-badge">Capabilities</span>
-                    <h2 class="big-heading">Our Core Services</h2>
-                </div>
+                <div class="services-grid">
+                    
+                    <div class="service-card reveal-card">
+                        <div class="card-icon"><i class="fas fa-billboard"></i></div>
+                        <h3>Out-Of-Home (OOH) Advertising</h3>
+                        <p>We understand your brand, plan, source, deploy and manage high-impact outdoor campaigns that put brands in front of the right audience at the right time.</p>
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1552089123-2d26226fc2b7?q=80&w=800&auto=format&fit=crop" alt="Billboard">
+                        </div>
+                    </div>
 
-                <div class="service-block right-img reveal-block">
-                    <div class="service-text">
-                        <div class="service-icon"><i class="fas fa-billboard"></i></div>
-                        <h3>Out-of-Home Advertising</h3>
-                        <p>Take your brand beyond the screen and into the streets. Our Out-of-Home (OOH) advertising solutions—ranging from eye-catching billboards to high-traffic transit ads—ensure your message is seen, remembered, and acted on.</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check"></i> High-traffic billboards</li>
-                            <li><i class="fas fa-check"></i> Transit advertising</li>
-                            <li><i class="fas fa-check"></i> Digital displays</li>
-                        </ul>
-                        <a href="contact.html" class="text-link">Book a Slot <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-card reveal-card">
+                        <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
+                        <h3>Media Planning & Buying</h3>
+                        <p>Our media planning is data-driven and audience-focused, ensuring optimal reach, frequency, and a guaranteed ROI.</p>
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop" alt="Media Planning">
+                        </div>
                     </div>
-                    <div class="service-image">
-                        <img src="../assets/images/oom.jpg" alt="Out of Home Advertising">
-                    </div>
-                </div>
 
-                <div class="service-block left-img reveal-block">
-                    <div class="service-image">
-                        <img src="../assets/images/mediap.jpg" alt="Media Buying">
+                    <div class="service-card wide reveal-card">
+                        <div class="content-side">
+                            <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
+                            <h3>Brand Activations & Promotions</h3>
+                            <p>We bring brands closer to consumers through engaging on-site and experiential marketing campaigns. From In-store & Market Activations, Roadshows & Sampling, Trade Promotions, Product Launches, Consumer Engagement and Events.</p>
+                        </div>
+                        <div class="image-side">
+                            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800&auto=format&fit=crop" alt="Brand Activation Event">
+                        </div>
                     </div>
-                    <div class="service-text">
-                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
-                        <h3>Strategic Media Buying</h3>
-                        <p>Reach the right audience, at the right time, without wasting a kobo. Our expert team leverages deep market insight and negotiation power to secure premium slots and deliver high ROI across TV, radio, digital, and print.</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check"></i> Premium slot negotiation</li>
-                            <li><i class="fas fa-check"></i> Cross-platform strategy</li>
-                            <li><i class="fas fa-check"></i> Performance tracking</li>
-                        </ul>
-                        <a href="contact.html" class="text-link">Optimize Spend <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
 
-                <div class="service-block right-img reveal-block">
-                    <div class="service-text">
-                        <div class="service-icon"><i class="fas fa-broadcast-tower"></i></div>
-                        <h3>In-Store Radio Advertising</h3>
-                        <p>Broadcast your brand directly to shoppers. With our in-house radio advertising service, we help supermarkets and retail spaces amplify promotions, boost foot traffic, and drive sales through curated, high-quality audio messages.</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check"></i> Real-time audio ads</li>
-                            <li><i class="fas fa-check"></i> Retail partnerships</li>
-                            <li><i class="fas fa-check"></i> Targeted messaging</li>
-                        </ul>
-                        <a href="contact.html" class="text-link">Start Broadcasting <i class="fas fa-arrow-right"></i></a>
+                    <div class="service-card reveal-card">
+                        <div class="card-icon"><i class="fas fa-print"></i></div>
+                        <h3>Branding, Fabrication & Printing</h3>
+                        <p>We specialize in delivering high-quality branded materials that strengthen brand identity and visibility. Signages, POSM's, Vehicle Branding etc.</p>
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?q=80&w=800&auto=format&fit=crop" alt="Printing Press">
+                        </div>
                     </div>
-                    <div class="service-image">
-                        <img src="../assets/images/in-house Radio.jpg" alt="In-Store Radio">
-                    </div>
-                </div>
 
-                <div class="service-block left-img reveal-block">
-                    <div class="service-image">
-                        <img src="../assets/images/packaging.jpg" alt="Promotional Merchandise">
+                    <div class="service-card reveal-card">
+                        <div class="card-icon"><i class="fas fa-gift"></i></div>
+                        <h3>Promotional Products</h3>
+                        <p>We supply Customized and branded promotional products that enhance brand recall and loyalty.</p>
+                        <div class="card-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=800&auto=format&fit=crop" alt="Gift Items">
+                        </div>
                     </div>
-                    <div class="service-text">
-                        <div class="service-icon"><i class="fas fa-gift"></i></div>
-                        <h3>Promotional Merchandise</h3>
-                        <p>Turn every gift into a lasting impression. Whether it’s corporate souvenirs, branded giveaways, or tailored gift items, we create merchandise that keeps your brand top-of-mind. Memorable, useful, and 100% you.</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-check"></i> Corporate souvenirs</li>
-                            <li><i class="fas fa-check"></i> Branded apparel</li>
-                            <li><i class="fas fa-check"></i> Custom packaging</li>
-                        </ul>
-                        <a href="https://www.behance.net/gallery/221056545/BlueSky-Promotional-Items" target="_blank" class="text-link">View Catalogue <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
 
+                </div>
             </div>
         </section>
 
         <section class="cta-banner">
-            <div class="cta-bg-image" style="background-image: url('../assets/images/06.jpg');"></div>
+            <div class="cta-bg-image" style="background-image: url('../assets/images/let\'sWorkTogether.jpg');"></div>
             <div class="cta-overlay"></div>
             <div class="container relative z-10 center">
-                <h2 class="cta-title">Ready to amplify your brand?</h2>
-                <p class="cta-text">
-                    Join Nigeria's top-performing campaigns. Let's build a strategy that works.
-                </p>
+                <h2 class="cta-title">Ready to elevate your brand?</h2>
                 <div class="cta-buttons">
                     <a href="contact.html" class="btn-contact large">
-                        <span>Launch Campaign</span>
-                        <i class="fas fa-rocket"></i>
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -240,9 +196,9 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-cta-section">
-                    <h2 class="cta-heading">Seen Enough? <br>Let's Start.</h2>
+                    <h2 class="cta-heading">Need a quote? <br>Let's Talk.</h2>
                     <a href="contact.html" class="big-arrow-btn">
-                        <span class="btn-text">Get in Touch</span>
+                        <span class="btn-text">Contact Us</span>
                         <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
                     </a>
                 </div>
@@ -250,7 +206,7 @@
                 <div class="footer-content-grid">
                     <div class="footer-col brand-col">
                         <img src="../assets/images/BSLogo.png" alt="BlueSky" class="footer-logo">
-                        <p class="footer-desc">Increasing Brand's Visibility through innovation and integrity.</p>
+                        <p class="footer-desc">Your strategic partner for brand visibility and growth.</p>
                     </div>
                     <div class="footer-col">
                         <h4 class="footer-label">Explore</h4>
@@ -289,17 +245,12 @@
         document.addEventListener("DOMContentLoaded", function() {
             gsap.registerPlugin(ScrollTrigger);
             
-            // Reveal Service Blocks
-            gsap.utils.toArray('.reveal-block').forEach((block) => {
-                gsap.from(block, {
-                    scrollTrigger: { trigger: block, start: "top 85%" },
-                    y: 60, opacity: 0, duration: 0.8, ease: "power2.out"
-                });
+            gsap.from(".reveal-card", {
+                scrollTrigger: { trigger: ".services-grid", start: "top 85%" },
+                y: 50, opacity: 0, duration: 0.8, stagger: 0.15, ease: "power2.out"
             });
-            
-            // Hero Animation
+
             gsap.from(".hero-title", { y: 30, opacity: 0, duration: 1, delay: 0.2 });
-            gsap.from(".hero-desc", { y: 20, opacity: 0, duration: 1, delay: 0.4 });
         });
     </script>
 </body>
