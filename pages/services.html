@@ -13,7 +13,9 @@
     <link rel="shortcut icon" href="../assets/images/LogoIcon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../assets/css/style.css"> 
-    <link rel="stylesheet" href="../assets/css/services-modern.css"> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/services-modern.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
 </head>
@@ -34,7 +36,7 @@
                     <li><a href="About.html" class="nav-link">About Us</a></li>
                     
                     <li class="dropdown-trigger">
-s                        <a href="#" class="nav-link">
+                        <a href="#" class="nav-link">
                             Portfolio <i class="fas fa-chevron-down chevron"></i>
                         </a>
                         <div class="dropdown-menu">
@@ -128,7 +130,7 @@ s                        <a href="#" class="nav-link">
             <div class="container">
                 <div class="services-grid">
                     
-                    <div class="service-card reveal-card">
+                    <div class="service-card">
                         <div class="card-icon"><i class="fas fa-billboard"></i></div>
                         <h3>Out-Of-Home (OOH) Advertising</h3>
                         <p>We understand your brand, plan, source, deploy and manage high-impact outdoor campaigns that put brands in front of the right audience at the right time.</p>
@@ -137,7 +139,7 @@ s                        <a href="#" class="nav-link">
                         </div>
                     </div>
 
-                    <div class="service-card reveal-card">
+                    <div class="service-card">
                         <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
                         <h3>Media Planning & Buying</h3>
                         <p>Our media planning is data-driven and audience-focused, ensuring optimal reach, frequency, and a guaranteed ROI.</p>
@@ -146,7 +148,7 @@ s                        <a href="#" class="nav-link">
                         </div>
                     </div>
 
-                    <div class="service-card wide reveal-card">
+                    <div class="service-card wide">
                         <div class="content-side">
                             <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
                             <h3>Brand Activations & Promotions</h3>
@@ -157,7 +159,7 @@ s                        <a href="#" class="nav-link">
                         </div>
                     </div>
 
-                    <div class="service-card reveal-card">
+                    <div class="service-card">
                         <div class="card-icon"><i class="fas fa-print"></i></div>
                         <h3>Branding, Fabrication & Printing</h3>
                         <p>We specialize in delivering high-quality branded materials that strengthen brand identity and visibility. Signages, POSM's, Vehicle Branding etc.</p>
@@ -166,7 +168,7 @@ s                        <a href="#" class="nav-link">
                         </div>
                     </div>
 
-                    <div class="service-card reveal-card">
+                    <div class="service-card">
                         <div class="card-icon"><i class="fas fa-gift"></i></div>
                         <h3>Promotional Products</h3>
                         <p>We supply Customized and branded promotional products that enhance brand recall and loyalty.</p>
@@ -245,11 +247,7 @@ s                        <a href="#" class="nav-link">
         document.addEventListener("DOMContentLoaded", function() {
             gsap.registerPlugin(ScrollTrigger);
             
-            gsap.from(".reveal-card", {
-                scrollTrigger: { trigger: ".services-grid", start: "top 85%" },
-                y: 50, opacity: 0, duration: 0.8, stagger: 0.15, ease: "power2.out"
-            });
-
+            // Hero Animation Only (Safe)
             gsap.from(".hero-title", { y: 30, opacity: 0, duration: 1, delay: 0.2 });
         });
     </script>
