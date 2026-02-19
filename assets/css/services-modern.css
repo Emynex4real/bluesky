@@ -174,7 +174,13 @@
     z-index: 0;
     opacity: 0.3;
 }
-.cta-title { font-family: 'Outfit', sans-serif; font-size: 3rem; margin-bottom: 2rem; }
+.cta-title { font-family: 'Outfit', sans-serif; font-size: 3rem; margin-bottom: 2rem; color: white; }
+
+.cta-buttons{
+    /* border: 2px solid white; */
+    width: fit-content;
+    display: inline-flex;
+}
 
 /* Responsive */
 @media (max-width: 900px) {

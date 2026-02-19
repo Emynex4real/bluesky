@@ -202,8 +202,14 @@
     background: rgba(5, 10, 20, 0.85);
     z-index: 1;
 }
-.cta-title { font-size: 2.5rem; margin-bottom: 1rem; font-family: 'Outfit', sans-serif; }
+.cta-title { font-size: 2.5rem; margin-bottom: 1rem; font-family: 'Outfit', sans-serif; color: white;}
 .cta-text { opacity: 0.8; margin-bottom: 2.5rem; }
+
+.cta-buttons{
+    /* border: 2px solid white; */
+    width: fit-content;
+    display: inline-flex;
+}
 
 /* Responsive */
 @media (max-width: 900px) {

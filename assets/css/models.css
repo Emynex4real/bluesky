@@ -245,7 +245,13 @@
     z-index: 0;
     filter: brightness(0.4);
 }
-.cta-title { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 2rem; }
+.cta-title { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 2rem; color: white; }
+
+.cta-buttons{
+    /* border: 2px solid white; */
+    width: fit-content;
+    display: inline-flex;
+}
 
 /* Responsive */
 @media (max-width: 900px) {
